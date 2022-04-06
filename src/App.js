@@ -1,11 +1,11 @@
 import logo from './logo.svg';
 import './App.css';
+import { Provider } from 'react-redux';
+import store from './store';
 
 function App() {
-  return (
-    <div className="App">
-        <h1>Welcome to the SUP!</h1>
-    </div>
-  );
+  <Provider store={store}>
+    <h1>Welcome to the SUP!</h1>
+  </Provider>;
 }
 export default App;
